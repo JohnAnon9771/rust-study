@@ -31,3 +31,13 @@ pub fn exec() -> () {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_exec() {
+        assert_eq!(exec(), ());
+    }
+}
